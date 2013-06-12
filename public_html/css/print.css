@@ -1,0 +1,54 @@
+root { 
+    display: block;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 16pt;
+}
+
+.navbar {
+    display: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:not([href^="#"]) {
+    font-weight: bold;
+}
+
+a:not([href^="#"]):after {
+    font-family: monospace;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: normal;
+    content: " (" attr(href) ")"
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+section:after {
+    content: "--------------------8<--------------------";
+}
+
+img {
+    vertical-align: middle;
+}
+
+section#workexperience a > img:after {
+    content: attr(title)
+}
+
+section#workexperience a > img {
+    content: ""
+}
+
+div.container:before, footer:after {
+    content: " PRINT VERSION"
+}

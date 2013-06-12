@@ -10,15 +10,17 @@
         <meta name="description" content="The personal profile and portfolio of Steven Meyer">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
         <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
+            @media screen {
+                body {
+                    padding-top: 60px;
+                    padding-bottom: 40px;
+                }
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -54,11 +56,14 @@
 
             <section id="home">
                 <!-- Main hero unit for a primary marketing message or call to action -->
-                <div class="hero-unit">
-                    <h1>Steven Meyer</h1>
-                    <h2>Aberystwyth, UK</h2>
-                    <p>Steven Meyer is a Software Engineering student, motorcyclist and conservation volunteer.</p>
-                    <p><img alt="Steven Meyer" src="img/steven-meyer.jpg" title="Steven Meyer with his socialising hat on." /></p>
+                <div class="hero-unit row">
+                    <div class="span7 pull-right">
+                        <h1>Steven Meyer</h1><br />
+                        <h2>Aberystwyth, UK</h2>
+                        <p>Steven Meyer is a Software Engineering student, motorcyclist and conservation volunteer.</p>
+                        <p class="network"><a href="http://uk.linkedin.com/in/stevenmeyeruk"><img alt="http://uk.linkedin.com/in/" height="50" src="img/LinkedIn_Logo60px.png" title="LinkedIn" width="60" />StevenMeyerUK</a></p><p class="network"><a href="https://twitter.com/StevenMeyerUK"><img alt="http://twitter.com/" height="60" src="img/twitter-bird-light-bgs.png" title="Twitter" width="60" />@StevenMeyerUK</a></p>
+                    </div>
+                    <p class="span3"><img alt="Steven Meyer" class="img-rounded profile" src="img/steven-meyer.jpg" title="Steven Meyer with his socialising hat on." /></p>
                 </div>
             </section>
 
@@ -97,22 +102,26 @@
                     </div>
                     <div>
                         <h2>Other</h2>
-                        <h3>A-Levels &mdash; <a href="http://www.loreto.ac.uk/">Loreto College</a>, Manchester</h3>
-                        <dl>
-                            <dt>Maths</dt><dd>B</dd>
-                            <dt>Further Maths</dt><dd>C</dd>
-                            <dt>Physics</dt><dd>B</dd>
-                            <dt>Computing</dt><dd>B</dd>
-                        </dl>
-                        <h3>G.C.S.E. &mdash; <a href="http://www.salegrammar.co.uk/">Sale Grammar School</a>, Cheshire</h3>
-                        <p>10 A* &ndash; B incl. Maths, English, Physics</p>
-                        <h3>Independent Courses</h3>
-                        <dl>
-                            <dt><a href="http://www.lime.org.uk/" hreflang="en">T&ycirc;-Mawr Lime</a>, Powys</dt>
-                            <dd>Introduction to Lime &amp; Lime Plastering. <i>May 2013</i>.</dd>
-                            <dt><a href="http://www.aber.ac.uk/en/ccs/staff-students/business-start-up/" hreflang="en">Crisalis (Business Start-Up)</a>, Aberystwyth University</dt>
-                            <dd>Business Start-up Week seminars. <i>3rd &ndash; 7th June 2013</i>.</dd>
-                        </dl>
+                        <div>
+                            <h3>A-Levels &mdash; <a href="http://www.loreto.ac.uk/">Loreto College</a>, Manchester</h3>
+                            <dl>
+                                <dt>Maths</dt><dd>B</dd>
+                                <dt>Further Maths</dt><dd>C</dd>
+                                <dt>Physics</dt><dd>B</dd>
+                                <dt>Computing</dt><dd>B</dd>
+                            </dl>
+                        </div><div>
+                            <h3>G.C.S.E. &mdash; <a href="http://www.salegrammar.co.uk/">Sale Grammar School</a>, Cheshire</h3>
+                            <p>10 A* &ndash; B incl. Maths, English, Physics</p>
+                        </div><div>
+                            <h3>Independent Courses</h3>
+                            <dl>
+                                <dt><a href="http://www.lime.org.uk/" hreflang="en">T&ycirc;-Mawr Lime</a>, Powys</dt>
+                                <dd>Introduction to Lime &amp; Lime Plastering. <i>May 2013</i>.</dd>
+                                <dt><a href="http://www.aber.ac.uk/en/ccs/staff-students/business-start-up/" hreflang="en">Crisalis (Business Start-Up)</a>, Aberystwyth University</dt>
+                                <dd>Business Start-up Week seminars. <i>3rd &ndash; 7th June 2013</i>.</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -136,17 +145,19 @@
             </section>
             
             <section id="links">
-                <h1>Links</h1>
-                <dl>
-                    <dt><img alt="View Steven Meyer's Profile on LinkedIn" height="60" src="img/LinkedIn_Logo60px.png" width="60" /></dt>
-                    <dd><a href="http://uk.linkedin.com/in/stevenmeyeruk">View my profile</a> on LinkedIn.</dd>
-                    <dt><img alt="Follow Steven Meyer on Twitter" height="60" src="img/twitter-bird-light-bgs.png" width="60" /></dt>
-                    <dd><a href="https://twitter.com/StevenMeyerUK">Follow me</a> on Twitter.</dd>
-                    <dt><img alt="Steven Meyer's BrandYourself profile" height="60" src="img/brandyourself.png" width="49" /></dt>
-                    <dd>My <a href="http://steven-meyer.com">BrandYourself</a> profile.</dd>
-                    <dt><img alt="Steven Meyer's TrustCloud card" height="60" src="img/TrustCloud_logo_64px.png" width="60" /></dt>
-                    <dd>My <a href="https://trustcloud.com/!/stevenmeyeruk">TrustCard</a>.</dd>
-                </dl>
+                <div>
+                    <h1>Links</h1>
+                    <dl>
+                        <dt><img alt="View Steven Meyer's Profile on LinkedIn" height="50" src="img/LinkedIn_Logo60px.png" width="60" /></dt>
+                        <dd><a href="http://uk.linkedin.com/in/stevenmeyeruk">View my profile</a> on LinkedIn.</dd>
+                        <dt><img alt="Follow Steven Meyer on Twitter" height="60" src="img/twitter-bird-light-bgs.png" width="60" /></dt>
+                        <dd><a href="https://twitter.com/StevenMeyerUK">Follow me</a> on Twitter.</dd>
+                        <dt><img alt="Steven Meyer's BrandYourself profile" height="60" src="img/brandyourself.png" width="49" /></dt>
+                        <dd>My <a href="http://steven-meyer.com">BrandYourself</a> profile.</dd>
+                        <dt><img alt="Steven Meyer's TrustCloud card" height="60" src="img/TrustCloud_logo_64px.png" width="60" /></dt>
+                        <dd>My <a href="https://trustcloud.com/!/stevenmeyeruk">TrustCard</a>.</dd>
+                    </dl>
+                </div>
             </section>
 
             <hr>

@@ -3,3 +3,63 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    background-color: #006dcc;
+}
+
+section#home .hero-unit {
+    background-color: #fcfcfc;
+}
+
+section#home .network {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+section#home a {
+    color: #333;
+}
+
+h1 {
+    color: #fcfcfc;
+}
+
+section div.collection {
+    background-color: #fcfcfc;
+    background-color: rgba(252, 252, 252, 0.9);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+section div.collection a {
+    color: #003399
+}
+
+section .collection > div {
+    padding: 20px;
+}
+
+section#workexperience > div > p {
+    color: #fcfcfc;
+}
+
+section#workexperience > div > p img {
+    border: 0;
+}
+
+section#links dl > dd {
+    height: 40px;
+    margin-top: 20px;
+}
+
+hr.bottomrule {
+    border: none;
+    background-color: #fcfcfc;
+    color: #fcfcfc;
+    height: 1px;
+    width: 100%;
+}
+
+footer {
+    color: #fcfcfc;
+}

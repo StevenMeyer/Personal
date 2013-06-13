@@ -5,7 +5,7 @@ root {
 body {
     background-color: #fff;
     color: #000;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .navbar {
@@ -23,7 +23,7 @@ a:not([href^="#"]) {
 
 a:not([href^="#"]):after {
     font-family: monospace;
-    font-size: 16pt;
+    font-size: 14pt;
     font-style: normal;
     font-weight: normal;
     content: " (" attr(href) ")"
@@ -49,6 +49,6 @@ section#workexperience a > img {
     content: ""
 }
 
-div.container:before, footer:after {
+div.container:before {
     content: " PRINT VERSION"
 }

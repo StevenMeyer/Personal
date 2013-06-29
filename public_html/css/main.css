@@ -5,6 +5,7 @@
    ========================================================================== */
 body {
     background-color: #006dcc;
+    position: relative;
 }
 
 section#home .hero-unit {
@@ -27,6 +28,8 @@ h1 {
 section div.collection {
     background-color: #fcfcfc;
     background-color: rgba(252, 252, 252, 0.9);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     border-radius: 6px;
     margin-bottom: 10px;
 }
@@ -47,10 +50,165 @@ section#workexperience > div > p img {
     border: 0;
 }
 
-section#links dl > dd {
-    height: 40px;
-    margin-top: 20px;
+div.footer {
+    background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
+    background-image: -o-linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
+    background-image: -webkit-linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
+    background-image: -ms-linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
+    background-image: linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
+    padding: 10px;
+    padding-top: 60px;
 }
+
+@media (max-width: 767px) {
+    div.footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-top: 80px;
+    }
+}
+
+div.footer div.collection {
+    background-color: #1b1b1b;
+}
+
+section#links div.collection > div {
+    padding: 0px 0px;
+}
+
+section#links {
+    color: #fcfcfc;
+    font-style: oblique;
+}
+
+section#links a {
+    color: #fcfcfc;
+}
+
+section#links h1 {
+    display: none;
+}
+
+section#links .n {
+    font-size: larger;
+}
+
+section#links .honorific-prefix {
+    display: none;
+}
+
+section#links .vcard-only {
+    display: none;
+}
+
+section#links div.row {
+    position: relative;
+}
+
+@media (max-width: 767px) and (min-width: 470px) {
+    section#links div.row {
+        width: 470px;
+    }
+}
+
+section#links div.row div.vcard div.details {
+    background: #1b1b1b url('../img/hcard.png') no-repeat;
+    background-position: 101% 10px;
+    position: relative;
+    margin: 15px -2px 15px 0px;
+    padding: 39px 19px 14px;
+    background-color: #1b1b1b;
+    border: 1px solid #fcfcfc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+section#links div.vcard div.details > p {
+    padding: 3px 0px;
+}
+
+section#links div.social {
+    background-color: #fcfcfc;
+    border: 1px solid #fcfcfc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin: -24px 0px 0px 0px;
+    padding: 15px 0px 10px 0px;
+}
+
+@media (max-width: 767px) {
+    section#links div.row div.vcard div.details {
+        margin-right: 0px;
+    }
+}
+
+section#links div.social > div {
+    text-align: center;
+}
+
+section#links div.social div#linkedin {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+@media (max-width: 767px) and (min-width: 470px) {
+    section#links div.social {
+        height: 85px;
+    }
+    section#links div.social > div {
+        display: inline-block;
+        float: left;
+        margin-left: 30px;
+        width: 70px;
+    }
+}
+
+/*section#links ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+section#links ul ul {
+    margin-left: 80px;
+    position: relative;
+    top: -3em;
+    margin-bottom: -2em;
+}
+
+section#links div ul:first-child li {
+    margin: 0px;
+}
+
+section#links ul li:first-child {
+    margin-bottom: 10px;
+}
+
+section#links ul li img {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+section#links ul li.social {
+    min-height: 60px;
+}
+
+section#links ul li#linkedin img {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+section#links ul li#brandyourself img {
+    margin-left: 25px;
+    margin-right: 6px;
+}
+
+section#links ul li.sochide span {
+    display: none;
+}*/
 
 hr.bottomrule {
     border: none;
@@ -63,3 +221,10 @@ hr.bottomrule {
 footer {
     color: #fcfcfc;
 }
+
+/*section#volunteering > div {
+    background-image: url("../img/wall.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 465px;
+}*/

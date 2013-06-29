@@ -21,12 +21,16 @@ a:not([href^="#"]) {
     font-weight: bold;
 }
 
-a:not([href^="#"]):after {
+a[href^="http"]:after {
     font-family: monospace;
     font-size: 14pt;
     font-style: normal;
     font-weight: normal;
     content: " (" attr(href) ")"
+}
+
+a[rel="key"] {
+    display: none;
 }
 
 section {
@@ -47,6 +51,10 @@ section#workexperience a > img:after {
 
 section#workexperience a > img {
     content: ""
+}
+
+section#links li.social > a {
+    display: none;
 }
 
 div.container:before {

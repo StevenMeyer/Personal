@@ -8,6 +8,10 @@ body {
     position: relative;
 }
 
+.navbar-inner .container .pull-right {
+    padding-top: 4px;
+}
+
 section#home .hero-unit {
     background-color: #fcfcfc;
 }

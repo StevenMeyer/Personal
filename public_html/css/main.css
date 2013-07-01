@@ -1,8 +1,3 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 body {
     background-color: #006dcc;
     position: relative;
@@ -198,50 +193,6 @@ section#links div.social div#linkedin {
     }
 }
 
-/*section#links ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 20px 0px;
-}
-
-section#links ul ul {
-    margin-left: 80px;
-    position: relative;
-    top: -3em;
-    margin-bottom: -2em;
-}
-
-section#links div ul:first-child li {
-    margin: 0px;
-}
-
-section#links ul li:first-child {
-    margin-bottom: 10px;
-}
-
-section#links ul li img {
-    margin-left: 20px;
-    vertical-align: middle;
-}
-
-section#links ul li.social {
-    min-height: 60px;
-}
-
-section#links ul li#linkedin img {
-    margin-left: 25px;
-    margin-top: 5px;
-}
-
-section#links ul li#brandyourself img {
-    margin-left: 25px;
-    margin-right: 6px;
-}
-
-section#links ul li.sochide span {
-    display: none;
-}*/
-
 hr.bottomrule {
     border: none;
     background-color: #fcfcfc;
@@ -253,10 +204,3 @@ hr.bottomrule {
 footer {
     color: #fcfcfc;
 }
-
-/*section#volunteering > div {
-    background-image: url("../img/wall.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    min-height: 465px;
-}*/

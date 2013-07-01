@@ -8,8 +8,26 @@ body {
     position: relative;
 }
 
+@media (max-width: 334px) {
+    .navbar .navbar-inner .brand {
+        display: none;
+    }
+}
+
+.navbar .navbar-inner .nav-collapse {
+    clear: none;
+}
+
 .navbar-inner .container .pull-right {
     padding-top: 4px;
+}
+
+.navbar-inner .container .pull-right img {
+    margin-left: 10px;
+}
+
+.navbar-inner .container .pull-right :last-child img {
+    margin-left: 2px;
 }
 
 section#home .hero-unit {
@@ -62,14 +80,19 @@ div.footer {
     background-image: -ms-linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
     background-image: linear-gradient(top, #006dcc 5%, #1b1b1b 10%);
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 80px;
+}
+
+@media (min-width: 1200px) {
+    div.footer {
+        padding-top: 60px;
+    }
 }
 
 @media (max-width: 767px) {
     div.footer {
         margin-left: -20px;
         margin-right: -20px;
-        padding-top: 80px;
     }
 }
 
@@ -110,9 +133,14 @@ section#links div.row {
     position: relative;
 }
 
-@media (max-width: 767px) and (min-width: 470px) {
-    section#links div.row {
+@media (min-width: 470px) {
+    section#links div.row, section#links .span5 {
         width: 470px;
+    }
+    
+    section#links .span1 {
+        margin-left: 30px;
+        width: 70px;
     }
 }
 

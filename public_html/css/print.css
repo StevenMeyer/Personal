@@ -53,7 +53,7 @@ section#workexperience a > img {
     content: ""
 }
 
-section#links li.social > a {
+section#links div#feed, footer {
     display: none;
 }
 

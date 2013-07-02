@@ -126,7 +126,7 @@ section#links div.row {
 }
 
 @media (min-width: 470px) {
-    section#links div.row, section#links .span5 {
+    section#links .span5 {
         width: 470px;
     }
     
@@ -184,6 +184,35 @@ section#links div.social div#linkedin {
         float: left;
         margin-left: 30px;
         width: 70px;
+    }
+}
+
+section#links div#feed {
+    margin: 15px 0 0 20px;
+    padding: 3px 0;
+}
+
+section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+    display: block;
+    height: 270px;
+    width: 380px;
+}
+
+@media (min-width: 1200px) {
+    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+        width: 470px;
+    }
+}
+
+@media (max-width: 979px) {
+    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+        width: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+        display: none;
     }
 }
 

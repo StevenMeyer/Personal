@@ -189,29 +189,32 @@ section#links div.social div#linkedin {
 
 section#links div#feed {
     margin: 15px 0 0 20px;
-    padding: 3px 0;
 }
 
-section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+section#links div#feed > div {
+    padding: 10px 0 10px 20px;
+}
+
+section#links div#feed, section#links div#feed div {
     display: block;
     height: 270px;
     width: 380px;
 }
 
 @media (min-width: 1200px) {
-    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+    section#links div#feed, section#links div#feed div {
         width: 470px;
     }
 }
 
 @media (max-width: 979px) {
-    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+    section#links div#feed, section#links div#feed div {
         width: 230px;
     }
 }
 
 @media (max-width: 768px) {
-    section#links div#feed, section#links div#feed div, section#links div#feed div iframe {
+    section#links div#feed, section#links div#feed div {
         display: none;
     }
 }

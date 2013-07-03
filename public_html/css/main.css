@@ -373,3 +373,9 @@ section#links div.vcard div.sprite.hcard {
     top: 15px;
     width: 80px;
 }
+
+section#links div.vcard div.details i.sprite.lock {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}

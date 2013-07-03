@@ -1,20 +1,16 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <title>Steven Meyer - Software Engineer - Aberystwyth, UK</title>
         <meta name="description" content="The personal profile and portfolio of Steven Meyer">
         <meta name="viewport" content="width=device-width">
-
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
         <style>
             @media screen {body{padding-top:60px}}
             @media print {root{display:block}body{background-color:#fff;color:#000;font-size:14pt}.navbar{display:none}a{color:#000;text-decoration:none}a:not([href^="#"]){font-weight:bold}a[href^="http"]:after{font-family:monospace;font-size:14pt;font-style:normal;font-weight:normal;content:" ("attr(href)")"}section{padding-bottom:20px}section:after{content:"--------------------8<--------------------"}img{vertical-align:middle}section#workexperience a>img:after{content:attr(title)}section#workexperience a>img{content:""}section#links div#feed,footer{display:none}div.container:before{content:"PRINT VERSION"}}
         </style>
-        <link rel="stylesheet" href="css/main.css" media="screen">
+        <link rel="stylesheet" href="css/main.min.css" media="screen">
         <link rel="profile" href="http://microformats.org/profile/hcard">
     </head>
     <body>
@@ -34,14 +30,14 @@
                         </ul>
                     </div><!--/.nav-collapse -->
                     <div class="pull-right">
-                        <a href="//plus.google.com/100728633626515298076?prsrc=3" rel="external me author" style="text-decoration:none;">
-                            <img alt="Steven Meyer on Google+" height="27" src="img/gplus-32.png" width="27"/>
+                        <a href="//plus.google.com/100728633626515298076?prsrc=3" rel="external me author" title="Steven Meyer on Google Plus" class="topnav-social">
+                            <span class="sprite gplus"></span>
                         </a>
-                        <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me">
-                            <img alt="View Steven Meyer's profile on Linkedin" height="27" src="img/LinkedIn_Logo60px.png" title="LinkedIn" width="32" />
+                        <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me" title="Steven Meyer on LinkedIn" class="topnav-social">
+                            <span class="sprite linkedin"></span>
                         </a>
-                        <a href="https://twitter.com/StevenMeyerUK" rel="external me">
-                            <img alt="Follow Steven Meyer on Twitter" height="32" src="img/twitter-bird-dark-bgs.png" title="Twitter" width="32" />
+                        <a href="https://twitter.com/StevenMeyerUK" rel="external me" title="Steven Meyer on Twitter" class="topnav-social">
+                            <span class="sprite twitter-dark"></span>
                         </a>
                     </div>
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -52,21 +48,18 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
-
             <section id="home">
                 <div class="hero-unit row">
                     <div class="span7 pull-right">
                         <h1>Steven Meyer</h1><br />
                         <h2>Aberystwyth, UK</h2>
                         <p>Steven Meyer is a Software Engineering student, motorcyclist and conservation volunteer.</p>
-                        <p class="network"><a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me"><img alt="http://uk.linkedin.com/in/" height="50" src="img/LinkedIn_Logo60px.png" title="LinkedIn" width="60" />StevenMeyerUK</a></p><p class="network"><a href="https://twitter.com/StevenMeyerUK" rel="external me"><img alt="http://twitter.com/" height="60" src="img/twitter-bird-light-bgs.png" title="Twitter" width="60" />@StevenMeyerUK</a></p>
+                        <p class="network"><a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me" title="Steven Meyer on LinkedIn"><span class="sprite linkedin"></span><span>StevenMeyerUK</span></a></p><p class="network"><a href="https://twitter.com/StevenMeyerUK" rel="external me" title="Steven Meyer on Twitter"><span class="sprite twitter-light"></span><span>@StevenMeyerUK</span></a></p>
                     </div>
                     <p class="span3"><img alt="Steven Meyer" class="img-rounded" src="img/steven-meyer.jpg" title="Steven Meyer with his socialising hat on." /></p>
                 </div>
             </section>
-
             <section id="volunteering">
                 <div class="row">
                     <h1>Volunteering</h1>
@@ -89,7 +82,6 @@
                     </div>
                 </div>
             </section>
-            
             <section id="education">
                 <div class="row">
                     <h1>Education &amp; Training</h1>
@@ -135,7 +127,6 @@
                     </div>
                 </div>
             </section>
-            
             <section id="workexperience">
                 <div>
                     <h1>Work Experience</h1>
@@ -156,10 +147,9 @@
                             </div>
                         </div>
                     </div>
-                    <p>For more work experience, <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me"><img alt="View Steven Meyer's profile on LinkedIn" height="33" src="img/btn_viewmy_160x33.png" title="View my profile on LinkedIn" width="160" /></a> or request a CV.</p>
+                    <p>For more work experience, <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me" title="View my profile on LinkedIn" class="sprite view-on-linkedin">view my profile on LinkedIn&reg;</a> or request a CV.</p>
                 </div>
             </section>
-
         </div> <!-- /container -->
         <div class="footer">
             <div class="container">
@@ -169,6 +159,7 @@
                         <div class="span5 collection">
                             <div id="vcard-Steven-Meyer" class="vcard">
                                 <div class="details">
+                                    <div class="sprite hcard"></div>
                                     <p class="n">
                                         <span class="honorific-prefix">Mr.</span>
                                         <span class="fn">
@@ -399,17 +390,17 @@ bWsuwachSzTPirBbQuyjFmnopgnB9rGeA4UkFdXk6F3RRxKxGRK7c7E6Nw==
                                     </p>
                                 </div>
                                 <div class="social span5">
-                                    <div class="span1" id="linkedin">
-                                        <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me" class="url"><img alt="View Steven Meyer's Profile on LinkedIn" height="50" src="img/LinkedIn_Logo60px.png" width="60" /></a>
+                                    <div class="span1">
+                                        <a href="http://uk.linkedin.com/in/stevenmeyeruk" rel="external me" class="url sprite linkedin" title="Steven Meyer on LinkedIn"></a>
                                     </div>
-                                    <div class="span1" id="twitter">
-                                        <a href="https://twitter.com/StevenMeyerUK" rel="external me" class="url"><img alt="Follow Steven Meyer on Twitter" height="60" src="img/twitter-bird-light-bgs.png" width="60" /></a>
+                                    <div class="span1">
+                                        <a href="https://twitter.com/StevenMeyerUK" rel="external me" class="url sprite twitter-light" title="Steven Meyer on Twitter"></a>
                                     </div>
-                                    <div class="span1" id="brandyourself">
-                                        <a href="http://steven-meyer.com" rel="external me"><img alt="Steven Meyer's BrandYourself profile" height="60" src="img/brandyourself.png" width="49" /></a>
+                                    <div class="span1">
+                                        <a href="http://steven-meyer.com" rel="external me" class="sprite brandyourself" title="Steven Meyer's BrandYourself profile"></a>
                                     </div>
-                                    <div class="span1" id="trustcloud">
-                                        <a href="https://trustcloud.com/!/stevenmeyeruk" rel="external"><img alt="Steven Meyer's TrustCloud card" height="60" src="img/TrustCloud_logo_64px.png" width="60" /></a>
+                                    <div class="span1">
+                                        <a href="https://trustcloud.com/!/stevenmeyeruk" rel="external" class="sprite trustcloud" title="Steven Meyer's TrustCard"></a>
                                     </div>
                                 </div>
                                 <span class="vcard-only">Timezone: GMT (UTC <span class="tz">+00:00</span>);</span>
@@ -422,11 +413,9 @@ bWsuwachSzTPirBbQuyjFmnopgnB9rGeA4UkFdXk6F3RRxKxGRK7c7E6Nw==
                         </div>
                     </div>
                 </section>
-
                 <hr class="bottomrule">
-
                 <footer>
-                    <p class="pull-right"><a href="http://jigsaw.w3.org/css-validator/check/referer" rel="external nofollow"><img alt="Valid CSS at Level 3" height="31" src="img/vcss3.gif" title="Valid CSS at Level 3" width="88" /></a></p>
+                    <p class="pull-right"><a href="http://jigsaw.w3.org/css-validator/check/referer" rel="external nofollow" title="Valid CSS3" class="sprite css">Valid CSS3</a></p>
                     <p>&copy; Steven Meyer 2013.</p>
                     <p>Twitter and the Twitter bird are trademarks of Twitter.</p>
                     <p>LinkedIn&reg;, the LinkedIn logo and the IN logo are registered trademarks of LinkedIn Corporation.</p>
@@ -436,28 +425,21 @@ bWsuwachSzTPirBbQuyjFmnopgnB9rGeA4UkFdXk6F3RRxKxGRK7c7E6Nw==
                 </footer>
             </div>
         </div>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=1;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-        <script>
+        <script type="text/javascript">
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=1;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
             ga('create', 'UA-42110091-1', 'stevenmeyer.co.uk');
             ga('send', 'pageview');
-
+            setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0015/1805.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b);}, 1);
         </script>
-        <script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0015/1805.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-        </script>
-
     </body>
 </html>

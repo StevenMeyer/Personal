@@ -13,18 +13,6 @@ body {
     clear: none;
 }
 
-.navbar-inner .container .pull-right {
-    padding-top: 4px;
-}
-
-.navbar-inner .container .pull-right img {
-    margin-left: 10px;
-}
-
-.navbar-inner .container .pull-right :last-child img {
-    margin-left: 2px;
-}
-
 section#home .hero-unit {
     background-color: #fcfcfc;
 }
@@ -61,10 +49,7 @@ section .collection > div {
 
 section#workexperience > div > p {
     color: #fcfcfc;
-}
-
-section#workexperience > div > p img {
-    border: 0;
+    margin-top: 5px;
 }
 
 div.footer {
@@ -137,8 +122,6 @@ section#links div.row {
 }
 
 section#links div.row div.vcard div.details {
-    background: #1b1b1b url('../img/hcard.png') no-repeat;
-    background-position: 101% 10px;
     position: relative;
     margin: 15px -2px 15px 0;
     padding: 39px 19px 14px;
@@ -171,10 +154,6 @@ section#links div.social > div {
     text-align: center;
 }
 
-section#links div.social div#linkedin {
-    padding: 5px 0;
-}
-
 @media (max-width: 767px) and (min-width: 470px) {
     section#links div.social {
         height: 85px;
@@ -192,7 +171,7 @@ section#links div#feed {
 }
 
 section#links div#feed > div {
-    padding: 10px 0 10px 20px;
+    padding: 2px 0 0 20px;
 }
 
 section#links div#feed, section#links div#feed div {
@@ -229,4 +208,168 @@ hr.bottomrule {
 
 footer {
     color: #fcfcfc;
+}
+
+div.navbar-inner div.pull-right {
+    height: 32px;
+    margin-top: 5px;
+}
+
+.sprite {
+    background: url('../img/sprites.png') no-repeat;
+}
+
+.sprite.brandyourself {
+    background-position: 0 0;
+}
+
+.sprite.css {
+    background-position: 0 -60px;
+}
+
+.sprite.gplus {
+    background-position: -229px -32px;
+}
+
+.sprite.hcard {
+    background-position: 0 -91px;
+}
+
+.sprite.linkedin {
+    background-position: -49px 0;
+}
+
+.sprite.lock {
+    background-position: -80px -91px;
+}
+
+.sprite.twitter-light {
+    background-position: -169px 0;
+}
+
+.sprite.twitter-dark {
+    background-position: -229px 0;
+}
+
+.sprite.trustcloud {
+    background-position: -109px 0;
+}
+
+.sprite.view-on-linkedin {
+    background-position: -101px -60px;
+}
+
+.topnav-social {
+    display: inline-block;
+    height: 32px;
+    margin: 0 0 0 5px;
+    width: 32px;
+}
+
+.topnav-social:last-child {
+    margin-left: 0;
+}
+
+.topnav-social > span {
+    display: inline-block;
+}
+
+.topnav-social > span.gplus {
+    height: 27px;
+    margin: 2px 3px 3px 2px;
+    width: 27px;
+}
+
+.topnav-social > span.linkedin {
+    background-position: -26px 0;
+    background-size: 139px 57px;
+    height: 27px;
+    margin: 2px 0 3px;
+    width: 32px;
+}
+
+.topnav-social > span.twitter-dark {
+    height: 32px;
+    width: 32px;
+}
+
+p.network, p.network > a {
+    height: 60px;
+    margin: 0;
+    position: relative;
+}
+
+p.network > a, p.network > a span {
+    display: inline-block;
+}
+
+p.network > a span.sprite {
+    width: 60px;
+}
+
+p.network > a span.linkedin {
+    height: 50px;
+    margin: 5px 10px 5px 0;
+}
+
+p.network > a span.twitter-light {
+    height: 60px;
+    margin: 0;
+}
+
+p.network > a span:not(.sprite) {
+    position: relative;
+    top: -25px;
+}
+
+section#workexperience a.sprite.view-on-linkedin {
+    color: transparent;
+    display: inline-block;
+    height: 33px;
+    margin: -10px 0.2em -10px;
+    width: 160px;
+}
+
+section#links div.social > div {
+    height: 60px;
+}
+
+section#links div.social > div > a.sprite {
+    display: inline-block;
+}
+
+section#links div.social > div > a.sprite.linkedin {
+    height: 50px;
+    margin-top: 5px;
+    width: 60px;
+}
+
+section#links div.social > div > a.sprite.twitter-light {
+    height: 60px;
+    width: 60px;
+}
+
+section#links div.social > div > a.sprite.brandyourself {
+    height: 60px;
+    width: 49px;
+}
+
+section#links div.social > div > a.sprite.trustcloud {
+    height: 60px;
+    width: 60px;
+}
+
+footer p.pull-right a.sprite.css {
+    display: inline-block;
+    color: transparent;
+    height: 31px;
+    width: 88px;
+}
+
+section#links div.vcard div.sprite.hcard {
+    height: 15px;
+    position: absolute;
+    right: -2px;
+    top: 15px;
+    width: 80px;
 }

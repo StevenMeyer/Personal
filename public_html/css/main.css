@@ -379,3 +379,8 @@ section#links div.vcard div.details i.sprite.lock {
     height: 14px;
     width: 14px;
 }
+
+#privacypolicy .modal-body small{
+    position: relative;
+    top: -0.5em;
+}

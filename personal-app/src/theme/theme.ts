@@ -53,5 +53,29 @@ export const theme = createTheme({
     cssVariables: true,
     typography: {
         fontFamily: 'var(--font-montserrat)',
+        h1: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
+        h2: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
+        h3: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
+        h4: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
+        h5: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
+        h6: {
+            fontFamily: 'var(--font-bebas)',
+            letterSpacing: '0',
+        },
     },
 });

@@ -13,7 +13,7 @@ const bebasNeue = Bebas_Neue({
 });
 
 const montserrat = Montserrat({
-  weight: ['400'],
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-montserrat',
@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${bebasNeue.variable} ${montserrat.variable}`}>
-        <AppRouterCacheProvider>
+    <html className={`${bebasNeue.variable} ${montserrat.variable}`} lang="en">
+      <body style={{ margin: 0 }}>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             {children}
           </ThemeProvider>

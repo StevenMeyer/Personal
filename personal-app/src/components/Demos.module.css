@@ -1,0 +1,67 @@
+@layer mui, demo;
+
+@layer demo {
+    /* .demo {
+        --rotation: 8deg;
+        --transitionDuration: 100ms;
+        --transitionEasing: ease;
+
+        position: absolute;
+        transition-property:
+            left,
+            right,
+            transform;
+        transition-duration: var(--transitionDuration);
+        transition-timing-function: var(--transitionEasing);
+    }
+
+    .demoImg {
+        filter: saturate(60%) brightness(60%);
+        transition: filter var(--transitionDuration) ease;
+    }
+
+    .demoClueButton {
+        position: absolute;
+        top: 15%;
+    } */
+
+    .demo {
+        --maxVWSize: 150%;
+        --maxWidth: min(calc(var(--width) * 1px), calc(var(--maxVWSize) - var(--mui-spacing) * 4));
+        --maxHeight: calc(var(--maxWidth) / (var(--width) / var(--height)));
+
+        aspect-ratio: var(--width) / var(--height);
+        position: absolute;
+        top: var(--top);
+        width: var(--maxWidth);
+    }
+
+    .demoTitle {}
+
+    .demoDescription {}
+
+    .demo:hover, .demo.demo:has(.demoClueButton:focus-within) {}
+
+    .demo:nth-of-type(2n-1) {
+        float: left;
+        top: 0;
+    }
+
+    .demo:nth-of-type(2n) {
+        float: right;
+    }
+}
+
+/* .demo:nth-of-type(2n-1) {
+    right: calc(100% - var(--mui-spacing) * 8);
+    transform: rotate(var(--rotation));
+}
+
+.demo:nth-of-type(2n-1):hover, .demo:nth-of-type(2n-1):has(button:focus-within) {
+    right: 0;
+}
+
+.demo:nth-of-type(2n-1) button {
+    right: calc(var(--mui-spacing) * 2);
+    transform: translateX(100%) rotate(calc(var(--rotation) * -1));
+} */

@@ -1,6 +1,60 @@
 @layer mui, demo;
 
 @layer demo {
+    .demos {
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+    .demo {
+        @property --peekX {
+            syntax: '<length-percentage>';
+            inherits: true;
+            initial-value: 20vw;
+        }
+        @property --maxVWSize {
+            syntax: '<length-percentage>';
+            inherits: false;
+            initial-value: 150%;
+        }
+        --actualWidth: min(calc(var(--width) * 1px), calc(var(--maxVWSize) - var(--mui-spacing) * 4));
+
+        aspect-ratio: var(--width) / var(--height);
+        position: relative;
+        margin-bottom: calc(var(--mui-spacing) * 16);
+        width: calc(var(--maxVWSize) - var(--mui-spacing) * 4);
+    }
+    .demoClueButton {
+        --containerOffset: calc(var(--mui-spacing) * -4);
+
+        position: absolute;
+        top: calc(var(--mui-spacing) * 2);
+    }
+    .demoInfo {
+        background-color: color-mix(in srgb, var(--mui-palette-background-paper) 80%, transparent);
+        position: absolute;
+        bottom: var(--mui-spacing);
+        padding: calc(var(--mui-spacing) * 2);
+        max-width: calc(100vw - var(--mui-spacing) * 4);
+    }
+    .keywordIcon {
+        border-radius: 0.5em;
+        height: 1em;
+        overflow: hidden;
+        position: relative;
+        width: 1em;
+    }
+    .demo:nth-of-type(2n-1) {
+        float: left;
+        left: calc(var(--actualWidth) * -1);
+        transform: translateX(var(--peekX));
+        .demoClueButton {
+            right: var(--containerOffset);
+        }
+    }
+    .demo:nth-of-type(2n) {
+        float: right;
+    }
     /* .demo {
         --rotation: 8deg;
         --transitionDuration: 100ms;
@@ -26,14 +80,18 @@
     } */
 
     .demo {
-        --maxVWSize: 150%;
-        --maxWidth: min(calc(var(--width) * 1px), calc(var(--maxVWSize) - var(--mui-spacing) * 4));
-        --maxHeight: calc(var(--maxWidth) / (var(--width) / var(--height)));
+        /* @property --maxVWSize {
+            syntax: '<length-percentage>';
+            inherits: false;
+            initial-value: 150%;
+        }
+        --actualWidth: min(calc(var(--width) * 1px), calc(var(--maxVWSize) - var(--mui-spacing) * 4));
+        --actualHeight: calc(var(--actualWidth) / (var(--width) / var(--height)));
 
         aspect-ratio: var(--width) / var(--height);
-        position: absolute;
-        top: var(--top);
-        width: var(--maxWidth);
+        margin-bottom: var(--mui-spacing) * 4;
+        position: relative;
+        width: var(--actualWidth); */
     }
 
     .demoTitle {}
@@ -43,12 +101,11 @@
     .demo:hover, .demo.demo:has(.demoClueButton:focus-within) {}
 
     .demo:nth-of-type(2n-1) {
-        float: left;
-        top: 0;
+        /* float: left; */
     }
 
     .demo:nth-of-type(2n) {
-        float: right;
+        /* float: right; */
     }
 }
 

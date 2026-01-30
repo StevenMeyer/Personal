@@ -12,7 +12,7 @@ const paragraphMargin = {
 
 const About: FC<Props> = ({ className, ...boxProps }) => {
     return (
-        <Box className={`${className} ${style.about}`} component="section" {...boxProps}>
+        <>
             <Typography variant="h2">About me</Typography>
             <Typography sx={paragraphMargin}>I've been bringing awesome front-end experiences to life since 2013.</Typography>
             <Typography sx={paragraphMargin}>I have a passion for building clean, accessible interfaces made of clear, reusable and well-tested code.</Typography>
@@ -84,7 +84,7 @@ const About: FC<Props> = ({ className, ...boxProps }) => {
             <Typography sx={paragraphMargin}>I'm not a designer, but I work closely with them to ensure usability, accessibility and engineering concerns are addressed early.</Typography>
             <Typography sx={paragraphMargin}>In a world of ever-increasing use of AI, this page was an opportunity for me to be creative <em>without</em> an AI co-pilot. A place to play with CSS to get the text to follow the outline of images, even when they float to the right; to play with browser-choice image resolution; to play with moving buttons around. I know how and when to use AI to speed up my coding, but I wanted to just be me for a while.</Typography>
             <Typography sx={paragraphMargin}>Mostly, though, this page exists so you can search for me to know I exist. You probably got here from a job application. Now you know I'm real and know some stuff, send me a message and we can have a chat.</Typography>
-        </Box>
+        </>
     );
 };
 export default About;

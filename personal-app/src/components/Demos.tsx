@@ -3,6 +3,7 @@ import { Demo as IDemo } from "@/models/demo";
 import { FC, JSX, use, useMemo } from "react";
 import Demo from "./Demo";
 import style from "./Demos.module.css";
+import Box from "@mui/material/Box";
 
 interface Props {
     demos: Promise<ReadonlyArray<Readonly<IDemo>>>;
@@ -28,6 +29,13 @@ function useDemos(demos: ReadonlyArray<Readonly<IDemo>>): JSX.Element[] {
 
 const Demos: FC<Props> = ({ demos: demosPromise }) => {
     const demos = use(demosPromise);
-    return useDemos(demos);
+    return demos.map((demo, index) => (
+        <Demo
+            key={demo.id}
+            {...demo}
+            className={style.demo}
+            preload={index === 0}
+        />
+    ));
 };
 export default Demos;
